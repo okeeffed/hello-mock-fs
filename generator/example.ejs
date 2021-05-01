@@ -1,0 +1,13 @@
+const faker = require('faker')
+
+<% values.forEach(function(value){ %>
+function <%= _.camelCase(`get ${value}`) %>() {
+    return faker.<%= value %>
+}
+<% }); %>
+
+module.exports = {
+<% values.forEach(function(value){ _%>
+    <%= _.camelCase(`get ${value}`) %>,
+<%_ }); %> 
+}

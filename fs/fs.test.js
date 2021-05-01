@@ -2,7 +2,7 @@ const mock = require("mock-fs");
 const path = require("path");
 const faker = require("faker");
 const { readFileSync } = require("fs");
-const { writeTmpFile, writeTmpSpecificFile } = require("./index");
+const { writeTmpFile, writeTmpSpecificFile } = require("./fs");
 
 beforeEach(() => {
   mock({

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generating a js file file output matches specific snapshot 1`] = `
+"const faker = require(\\"faker\\");
+
+function getLoremWord() {
+  return faker.lorem.word;
+}
+
+function getLoremWords() {
+  return faker.lorem.words;
+}
+
+function getDatabaseColumn() {
+  return faker.database.column;
+}
+
+module.exports = {
+  getLoremWord,
+  getLoremWords,
+  getDatabaseColumn,
+};
+"
+`;
