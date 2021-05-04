@@ -1,3 +1,3 @@
-const { writeTmpFile } = require("./fs");
+const { writeTmpFile } = require("./fs/fs");
 
 writeTmpFile();
